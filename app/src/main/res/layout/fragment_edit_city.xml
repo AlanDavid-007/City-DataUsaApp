@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".states.EditStatesFragment">
+
+
+    <TextView
+        android:id="@+id/textview_nome_state"
+        android:layout_width="217dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="64dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text = "@string/editdados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/id"
+        android:textColor="@color/nameStates"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_ID"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edit_slug"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/edit_shaper"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColorHint="@color/hintText"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Population"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Population" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:textColor="@color/nameStates"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_Year"
+        app:layout_constraintStart_toStartOf="@+id/estado_textView"
+        app:layout_constraintTop_toTopOf="@+id/edit_Year"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <EditText
+        android:id="@+id/edit_ID"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_shaper"
+        android:padding="5dp"
+        android:textColorHint="@color/hintText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_nome_state" />
+
+    <TextView
+        android:id="@+id/estado_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/state"
+        android:textColor="@color/nameStates"
+        android:textColorHint="@color/hintText"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_State"
+        app:layout_constraintStart_toStartOf="@+id/id_textView"
+        app:layout_constraintTop_toTopOf="@+id/edit_State"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <EditText
+        android:id="@+id/edit_State"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_shaper"
+        android:padding="5dp"
+        android:textColorHint="@color/hintText"
+        app:layout_constraintEnd_toEndOf="@+id/edit_ID"
+        app:layout_constraintTop_toBottomOf="@+id/edit_ID" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slug"
+        android:textColor="@color/nameStates"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_slug"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/edit_slug"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/savedbutton"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_background_radius"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/edit_slug"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/edit_slug" />
+
+    <EditText
+        android:id="@+id/edit_Population"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_shaper"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColorHint="@color/hintText"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Year"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Year" />
+
+    <EditText
+        android:id="@+id/edit_Year"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_shaper"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColorHint="@color/hintText"
+        app:layout_constraintEnd_toEndOf="@+id/edit_State"
+        app:layout_constraintTop_toBottomOf="@+id/edit_State" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/populationTextView"
+        android:textColor="@color/nameStates"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_Population"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/edit_Population"
+        app:layout_constraintVertical_bias="0.444" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

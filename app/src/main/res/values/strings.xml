@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cities</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Cidade">Cidade</string>
+    <string name="Numero">Número</string>
+    <string name="editar_dados">Editar dados do</string>
+    <string name="population">POPULAÇÃO DOS ESTADOS AMERICANOS</string>
+    <string name="filter">Filtrar</string>
+    <string name="year">Ano</string>
+    <string name="slug">Slug</string>
+    <string name="state">Estado</string>
+    <string name="id">ID</string>
+    <string name="populationTextView">População</string>
+    <string name="save">Salvar</string>
+    <string name="editdados">Editar dados do</string>
+</resources>
