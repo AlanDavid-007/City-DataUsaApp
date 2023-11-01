@@ -56,4 +56,3 @@ Useful links:
  * [Gson Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/gson)
  * [OkHttp](https://github.com/square/okhttp)
  * [Retrofit](https://github.com/square/retrofit)
- * [WS WORK SISTEMAS](https://www.wswork.com.br/)
